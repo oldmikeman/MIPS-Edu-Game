@@ -27,7 +27,8 @@ init() {
         var InstructionMenuButton = Button.getButton('Instruction_Menu', 375, 30, 1, 3, 'IM');
         InstructionMenuButton.addClickEvent(new NewSceneEvent(new InstructionMenu()));
         var IMHint= new HintEvent('IMHint')
-        IMHint.setHintContent('this is instruction menu \n it contain all insturtions game support');
+        IMHint.setHintContent('This is a lost of all the instructions you can use \n in this stage!\n'
+				'Make sure you use one of these instructions!');
         InstructionMenuButton.addLongPressEvent(IMHint);
         this.addComponent(InstructionMenuButton, -1);
 
